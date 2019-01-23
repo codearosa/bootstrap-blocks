@@ -1,0 +1,19 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+$blue: #21759b;
+
+.card {
+  border: 1px solid $blue !important;
+}
+
+
+
+@import "../../src/container-block/editor"; //import the container-block scss
+@import "../../src/row-block/editor"; //import the row-block scss
+
+@import "../../bootstrap-4.0.0/scss/bootstrap"; //import the styles of bootstrap
