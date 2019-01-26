@@ -3,25 +3,26 @@
  *
  * Registering a bootstrap container
  */
-
- import { registerBlockType } from '@wordpress/blocks';
+const { Component } = wp.element;
+import { registerBlockType } from '@wordpress/blocks';
 import { InnerBlocks } from '@wordpress/editor';
 const { __ } = wp.i18n;
 
-registerBlockType( 'row-block/main', {
-  title: 'row',
+registerBlockType( 'div-block/main', {
+  title: 'div',
   icon: 'index-card',
   category: 'bootstrap-blocks',
-    edit({ attributes, className, setAttributes }) {
+    edit( { attributes, className, setAttributes } ) {
+
         return (
-            <div class="row">
-              <InnerBlocks />
+            <div className={ className }>
+                <InnerBlocks />
             </div>
         );
     },
-    save({ attributes, className, setAttributes }) {
+    save( { attributes } ) {
         return (
-            <div class="row">
+            <div className={ className }>
                 <InnerBlocks.Content />
             </div>
         );

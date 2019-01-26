@@ -4,6 +4,9 @@
  * CSS for just Backend enqueued after style.scss
  * which makes it higher in priority.
  */
-.row {
-  border: 1px solid #21759b !important;
+
+$blue: #21759b;
+
+.card {
+  border: 1px solid $blue !important;
 }
