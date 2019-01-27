@@ -11,4 +11,5 @@
 
 import './card-block/block.js';
 import './container-block/block.js';
+import './div-block/block.js';
 import './row-block/block.js';

@@ -11,9 +11,7 @@ $blue: #21759b;
   border: 1px solid $blue !important;
 }
 
-
-
-@import "../../src/container-block/editor"; //import the container-block scss
 @import "../../src/row-block/editor"; //import the row-block scss
-
+@import "../../src/div-block/editor"; //import the div-block scss
+@import "../../src/container-block/editor"; //import the container-block scss
 @import "../../bootstrap-4.0.0/scss/bootstrap"; //import the styles of bootstrap
