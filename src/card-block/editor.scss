@@ -12,6 +12,6 @@ $blue: #21759b;
 }
 
 
-
+@import "../../src/div-block/editor"; //import the container-block scss
 @import "../../src/container-block/editor"; //import the container-block scss
 @import "../../bootstrap-4.0.0/scss/bootstrap"; //import the styles of bootstrap
