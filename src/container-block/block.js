@@ -12,6 +12,7 @@ registerBlockType( 'container-block/main', {
   title: 'container',
   icon: 'index-card',
   category: 'bootstrap-blocks',
+  html: false,
     edit( { attributes, className, setAttributes } ) {
         return (
             <div className={ 'container' + ' ' + className }>
