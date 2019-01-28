@@ -1,0 +1,12 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+ $blue: #21759b;
+
+ .wp-block-3columns-block-main {
+   border: 1px solid $blue !important;
+ }
