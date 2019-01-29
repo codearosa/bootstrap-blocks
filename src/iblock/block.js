@@ -8,23 +8,19 @@ import { registerBlockType } from '@wordpress/blocks';
 import { InnerBlocks } from '@wordpress/editor';
 const { __ } = wp.i18n;
 
-registerBlockType( 'rowblock/main', {
-  title: 'row',
+registerBlockType( 'iblock/main', {
+  title: 'Icon',
   icon: 'index-card',
   category: 'bootstrap-blocks',
-  description: __( 'I am a simple row. Give me a bootstrap classname to style my container.', 'div-block' ),
+  description: __( 'I am a simple <i>. Give me a fontawesome classname to give me a icon.', 'iblock' ),
     edit( { attributes, className, setAttributes } ) {
         return (
-            <div className={ 'row' + ' ' + className }>
-                <InnerBlocks />
-            </div>
+            <i className={ className }></i>
         );
     },
     save( { attributes, className } ) {
         return (
-            <div className={ 'row' + ' ' + className }>
-                <InnerBlocks.Content />
-            </div>
+            <i className={ className }></i>
         );
     },
 } );
