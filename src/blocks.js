@@ -13,3 +13,5 @@ import './yourcardblock/block.js';
 import './iconcardblock/block.js';
 import './containerblock/block.js';
 import './divblock/block.js';
+import './iblock/block.js';
+import './rowblock/block.js';
