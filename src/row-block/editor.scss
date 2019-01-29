@@ -5,8 +5,8 @@
  * which makes it higher in priority.
  */
 
- $blue: #21759b;
+$blue: #21759b;
 
- .row {
-   border: 1px solid $blue !important;
- }
+.wp-block-row-block-main {
+  border: 1px solid $blue !important;
+}
