@@ -9,7 +9,7 @@ import { InnerBlocks } from '@wordpress/editor';
 const { __ } = wp.i18n;
 
 const TEMPLATE = [
-  ['bootstrap-blocks/container-block', {} ],
+  ['core/html', { className: 'card-title' }],
   ['core/heading', { className: 'card-title' }],
   ['core/paragraph', { className: 'card-text' }],
 ];

@@ -28,7 +28,7 @@ function codearosa_block_category( $categories, $post ) {
 		array(
 			array(
 				'slug' => 'bootstrap-blocks',
-				'title' => __( 'Bootstrap blocks', 'bootstrap-blocks' ),
+				'title' => __( 'Bootstrap blocks', 'bootstrapblocks' ),
 			),
 		)
 	);
