@@ -9,8 +9,7 @@
  * Webpack is compiling as the input file.
  */
 
-import './yourcard-block/block.js';
-import './iconcard-block/block.js';
-import './container-block/block.js';
-import './div-block/block.js';
-import './row-block/block.js';
+import './yourcardblock/block.js';
+import './iconcardblock/block.js';
+import './containerblock/block.js';
+import './divblock/block.js';
