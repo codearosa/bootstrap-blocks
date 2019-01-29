@@ -8,7 +8,7 @@ import { registerBlockType } from '@wordpress/blocks';
 import { InnerBlocks } from '@wordpress/editor';
 const { __ } = wp.i18n;
 
-registerBlockType( 'container-block/main', {
+registerBlockType( 'containerblock/main', {
   title: 'container',
   icon: 'index-card',
   category: 'bootstrap-blocks',
