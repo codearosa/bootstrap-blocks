@@ -1,10 +1,10 @@
 <?php
 /**
- * Plugin Name: bootstrap-blocks — CGB Gutenberg Block Plugin
+ * Plugin Name: bootstrapblocks
  * Plugin URI: https://github.com/ahmadawais/create-guten-block/
- * Description: bootstrap-blocks — is a Gutenberg plugin created via create-guten-block.
- * Author: mrahmadawais, maedahbatool
- * Author URI: https://AhmadAwais.com/
+ * Description: bootstrap-blocks — is a Gutenberg plugin for bootstrap markup in the editor and front-end.
+ * Author: Melanie Müller
+ * Author URI: https://codearosa.de/
  * Version: 1.0.0
  * License: GPL2+
  * License URI: https://www.gnu.org/licenses/gpl-2.0.txt

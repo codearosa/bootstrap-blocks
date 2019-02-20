@@ -4,6 +4,6 @@
  * CSS for just Backend enqueued after style.scss
  * which makes it higher in priority.
  */
-.wp-block-div-block-main {
+.wp-block-yourcardblock-main {
   border: 1px solid #21759b !important;
 }

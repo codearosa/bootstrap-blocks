@@ -7,6 +7,13 @@
 
  $blue: #21759b;
 
- .container {
+
+.wp-block-divblock-main,
+.wp-block-iblock-main,
+.container,
+.container-fluid,
+.row,
+.col-sm, .col,
+.card {
    border: 1px solid $blue !important;
  }

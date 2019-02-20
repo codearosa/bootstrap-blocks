@@ -8,31 +8,37 @@ import { registerBlockType } from '@wordpress/blocks';
 import { InnerBlocks } from '@wordpress/editor';
 const { __ } = wp.i18n;
 
-const ROW = [
-  ['core/columns', {className: 'row'},[
-    ['core/column', {className: 'col-sm'}],
-    ['core/column', {className: 'col-sm'}],
-    ['core/column', {className: 'col-sm'}],
-  ]
-]
+
+//  Import CSS.
+import './style.scss';
+import './editor.scss';
+
+const TWOCOLUMNS = [
+  ['bootstrapblocks/div', { placeholder: 'I am a column. Give me a bootstrap classname.', className: 'col-md' }],
+  ['bootstrapblocks/div', { placeholder: 'I am a column. Give me a bootstrap classname.', className: 'col-md' }],
 ];
 
-
-
-registerBlockType( 'rowblock/main', {
+registerBlockType( 'bootstrapblocks/row', {
   title: 'row',
   icon: 'index-card',
   category: 'bootstrap-blocks',
-  description: __( 'I am a simple row with 2 columns', 'rowblock' ),
-    edit( { attributes, className, setAttributes } ) {
-        return (
-            <InnerBlocks template={ROW} />
+  html: true,
+  alignWide: false,
+  edit( { attributes, className, setAttributes } ) {
+    let el = document.getElementById('mydiv');
+    el.classList.add('row');
 
-        );
-    },
-    save( { attributes, className } ) {
-        return (
-                <InnerBlocks.Content />
-        );
-    },
+      return (
+          <div className={ 'myrow' + ' ' + className }>
+              <InnerBlocks template={TWOCOLUMNS}
+          </div>
+      );
+  },
+  save( { attributes, className } ) {
+      return (
+          <div className={ 'row' + ' ' + className }>
+              <InnerBlocks.Content />
+          </div>
+      );
+  },
 } );
