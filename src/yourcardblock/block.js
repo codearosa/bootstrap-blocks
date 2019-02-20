@@ -1,7 +1,7 @@
 /**
  * BLOCK: bootstrap-blocks
  *
- * Registering a bootstrap container
+ * Registering a bootstrap card
  */
 
 import { registerBlockType } from '@wordpress/blocks';
@@ -14,6 +14,10 @@ const TEMPLATE = [
   ['core/heading', { className: 'card-title' }],
   ['core/paragraph', { className: 'card-text' }],
 ];
+
+//  Import CSS.
+import './style.scss';
+import './editor.scss';
 
 registerBlockType( 'yourcardblock/main', {
   title: 'Cards',

@@ -8,7 +8,11 @@ import { registerBlockType } from '@wordpress/blocks';
 import { InnerBlocks } from '@wordpress/editor';
 const { __ } = wp.i18n;
 
-registerBlockType( 'iblock/main', {
+//  Import CSS.
+import './style.scss';
+import './editor.scss';
+
+registerBlockType( 'bootstrapblocks/icon', {
   title: 'Icon',
   icon: 'index-card',
   category: 'bootstrap-blocks',

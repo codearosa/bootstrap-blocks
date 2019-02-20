@@ -8,23 +8,27 @@ import { registerBlockType } from '@wordpress/blocks';
 import { InnerBlocks } from '@wordpress/editor';
 const { __ } = wp.i18n;
 
-registerBlockType( 'divblock/main', {
+//  Import CSS.
+import './style.scss';
+import './editor.scss';
+
+registerBlockType( 'bootstrapblocks/div', {
   title: 'div',
   icon: 'index-card',
   category: 'bootstrap-blocks',
   description: __( 'I am a simple div. Give me a bootstrap classname to style my container.', 'div-block' ),
-    edit( { attributes, className, setAttributes } ) {
-        return (
-            <div className={ className }>
-                <InnerBlocks />
-            </div>
-        );
-    },
-    save( { attributes, className } ) {
-        return (
-            <div className={ className }>
-                <InnerBlocks.Content />
-            </div>
-        );
-    },
+  edit( { attributes, className, setAttributes } ) {
+      return (
+          <div className={ className }>
+              <InnerBlocks />
+          </div>
+      );
+  },
+  save( { attributes, className } ) {
+      return (
+          <div className={ className }>
+              <InnerBlocks.Content />
+          </div>
+      );
+  },
 } );

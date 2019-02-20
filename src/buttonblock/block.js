@@ -5,22 +5,38 @@
  */
 
 import { registerBlockType } from '@wordpress/blocks';
-import { InnerBlocks } from '@wordpress/editor';
+import { InnerBlocks , RichText } from '@wordpress/editor';
 const { __ } = wp.i18n;
 
-registerBlockType( 'iblock/main', {
-  title: 'Icon',
+//  Import CSS.
+import './style.scss';
+import './editor.scss';
+
+registerBlockType( 'bootstrapblocks/button', {
+  title: 'Button',
   icon: 'index-card',
   category: 'bootstrap-blocks',
-  description: __( 'I am a simple <i>. Give me a fontawesome classname to give me a icon.', 'iblock' ),
-    edit( { attributes, className, setAttributes } ) {
-        return (
-            <i className={ className }></i>
-        );
-    },
-    save( { attributes, className } ) {
-        return (
-            <i className={ className }></i>
-        );
-    },
+  description: __( 'I am a simple <button>. Give me a classname to give me a icon.', 'buttonblock' ),
+  attributes: {
+		content: {
+			source: 'html',
+			selector: 'button',
+		},
+	},
+
+	edit( { className, attributes, setAttributes } ) {
+		return (
+			<RichText
+				tagName="button"
+        placeholder="Link me"
+				className={ className }
+				value={ attributes.content }
+				onChange={ ( content ) => setAttributes( { content } ) }
+			/>
+		);
+	},
+
+	save( { attributes } ) {
+		return <RichText.Content tagName="button" value={ attributes.content } />;
+	}
 } );
