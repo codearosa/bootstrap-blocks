@@ -4,3 +4,6 @@
  * CSS for just Backend enqueued after style.scss
  * which makes it higher in priority.
  */
+.wp-block-column {
+  margin: 0 !important;
+}

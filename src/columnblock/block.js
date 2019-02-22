@@ -12,6 +12,13 @@ const { __ } = wp.i18n;
 import './style.scss';
 import './editor.scss';
 
+const COLUMNS = [
+  ['core/column', { placeholder: 'I am a column. Give me a bootstrap classname.' },[
+    ['bootstrapblocks/div', { placeholder: 'I am a column. Give me a bootstrap classname.', className: 'col-md border border-primary'}, ],
+  ]
+  ]
+  ];
+
 registerBlockType( 'bootstrapblocks/column', {
   title: 'col',
   icon: 'index-card',
@@ -20,7 +27,7 @@ registerBlockType( 'bootstrapblocks/column', {
   edit( { attributes, className, setAttributes } ) {
       return (
           <div className={ className }>
-              <InnerBlocks />
+              <InnerBlocks template={ COLUMNS } />
           </div>
       );
   },

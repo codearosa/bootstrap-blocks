@@ -25,5 +25,3 @@ import './buttonblock/block.js';
 
 import './rowblock/block.js';
 import './columnblock/block.js';
-
-import './2columnsblock/block.js';

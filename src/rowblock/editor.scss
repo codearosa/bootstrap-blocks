@@ -4,9 +4,14 @@
  * CSS for just Backend enqueued after style.scss
  * which makes it higher in priority.
  */
-
+@import "../../bootstrap-4.0.0/scss/bootstrap-grid"; //import the styles of bootstrap
 $blue: #21759b;
 
-.wp-block-div-block-main {
-  border: 1px solid $blue !important;
+.editor-inner-blocks {
+  width: 100%;
 }
+/*
+@media (min-width: 600px)
+.wp-block-columns>.editor-inner-blocks>.editor-block-list__layout>[data-type="core/column"] {
+    /* flex-basis: 50%; */
+    /* flex-grow: 0; */
