@@ -5,8 +5,10 @@
  * which makes it higher in priority.
  */
 
-$blue: #21759b;
+ $blue: #21759b;
+ $bluebackground: rbga(33, 117, 155,0.3);
 
-.wp-block-iblock-main {
-  border: 1px solid $blue !important;
-}
+ .wp-block-bootstrapblocks-button {
+   border: 2px solid $blue !important;
+   background: $bluebackground;
+ }

@@ -9,7 +9,7 @@ import { InnerBlocks } from '@wordpress/editor';
 const { __ } = wp.i18n;
 
 const DIVCONTAINER = [
-  ['divblock/main', { className: 'container' }],
+  ['bootstrapblocks/div', { className: 'container' }],
 ];
 
 //  Import CSS.
@@ -24,16 +24,12 @@ registerBlockType( 'bootstrapblocks/container', {
   alignWide: false,
   edit( { attributes, className, setAttributes } ) {
       return (
-          <div className={ className }>
               <InnerBlocks template={DIVCONTAINER} />
-          </div>
       );
   },
   save( { attributes, className } ) {
       return (
-          <div className={ className }>
               <InnerBlocks.Content />
-          </div>
       );
   },
 } );

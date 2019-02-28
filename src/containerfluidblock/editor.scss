@@ -6,7 +6,9 @@
  */
 
  $blue: #21759b;
+ $bluebackground: rgba(33,117,155,0.3);
 
- .container-fluid {
-   border: 1px solid $blue !important;
+ .wp-block-bootstrapblocks-containerfluid {
+   border: 2px solid $blue !important;
+   background: $bluebackground;
  }

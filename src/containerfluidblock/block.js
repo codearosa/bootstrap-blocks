@@ -9,7 +9,7 @@ import { InnerBlocks } from '@wordpress/editor';
 const { __ } = wp.i18n;
 
 const DIVFLUID = [
-  ['divblock/main', { className: 'container-fluid' }],
+  ['bootstrapblocks/div', { className: 'container-fluid' }],
 ];
 
 //  Import CSS.

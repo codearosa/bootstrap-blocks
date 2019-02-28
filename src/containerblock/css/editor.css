@@ -4,12 +4,7 @@
  * CSS for just Backend enqueued after style.scss
  * which makes it higher in priority.
  */
-.wp-block-divblock-main,
-.wp-block-iblock-main,
-.container,
-.container-fluid,
-.row,
-.col-sm, .col,
-.card {
-  border: 1px solid #21759b !important;
+.wp-block-bootstrapblocks-container {
+  border: 2px solid #21759b !important;
+  background: rgba(33, 117, 155, 0.3);
 }

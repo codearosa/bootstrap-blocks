@@ -20,14 +20,14 @@ registerBlockType( 'bootstrapblocks/button', {
   attributes: {
 		content: {
 			source: 'html',
-			selector: 'button',
+			selector: 'a',
 		},
 	},
 
 	edit( { className, attributes, setAttributes } ) {
 		return (
 			<RichText
-				tagName="button"
+				tagName="a"
         placeholder="Link me"
 				className={ className }
 				value={ attributes.content }

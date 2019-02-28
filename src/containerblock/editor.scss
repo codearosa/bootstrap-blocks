@@ -6,14 +6,9 @@
  */
 
  $blue: #21759b;
+ $bluebackground: rgba(33,117,155,0.3);
 
-
-.wp-block-divblock-main,
-.wp-block-iblock-main,
-.container,
-.container-fluid,
-.row,
-.col-sm, .col,
-.card {
-   border: 1px solid $blue !important;
+ .wp-block-bootstrapblocks-container {
+   border: 2px solid $blue !important;
+   background: $bluebackground;
  }

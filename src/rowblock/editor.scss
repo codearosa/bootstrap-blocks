@@ -15,3 +15,10 @@ $blue: #21759b;
 .wp-block-columns>.editor-inner-blocks>.editor-block-list__layout>[data-type="core/column"] {
     /* flex-basis: 50%; */
     /* flex-grow: 0; */
+
+@if $enable-grid-classes {
+.wp-block-bootstrapblocks-row > .editor-inner-blocks > .editor-block-list__layout {
+  @include make-row();
+  overflow-wrap: break-word;
+}
+}

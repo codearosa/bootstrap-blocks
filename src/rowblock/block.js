@@ -14,12 +14,10 @@ import './style.scss';
 import './editor.scss';
 
 const TWOCOLUMNS = [
-  ['core/columns', { placeholder: 'I am a column. Give me a bootstrap classname.', className: 'row border border-primary' },[
-    ['core/column', { placeholder: 'I am a column. Give me a bootstrap classname.', className: 'col-md border border-primary'}, ],
-    ['core/column', { placeholder: 'I am a column. Give me a bootstrap classname.', className: 'col-md border border-primary'},]
-  ]
-  ]
+    ['bootstrapblocks/column', { className: 'col-md' }],
+    ['bootstrapblocks/column', { className: 'col-md' }],
   ];
+
 
 registerBlockType( 'bootstrapblocks/row', {
   title: 'row',
@@ -30,13 +28,16 @@ registerBlockType( 'bootstrapblocks/row', {
   edit( { attributes, className, setAttributes } ) {
 
       return (
-        <InnerBlocks template={TWOCOLUMNS} />
-
+        <div className={ className }>
+              <InnerBlocks template={TWOCOLUMNS} />
+        </div>
       );
   },
   save( { attributes, className } ) {
       return (
+        <div className={ 'row' }>
               <InnerBlocks.Content />
+        </div>
       );
   },
 } );
