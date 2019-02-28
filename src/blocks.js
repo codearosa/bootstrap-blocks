@@ -18,6 +18,8 @@ import './containerblock/block.js';
 import './containerfluidblock/block.js';
 
 import './divblock/block.js';
+import './ablock/block.js';
+import './navblock/block.js';
 import './sectionblock/block.js';
 
 import './iblock/block.js';

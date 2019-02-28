@@ -1,0 +1,14 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+ $blue: blue;
+ $bluebackground: rgba(33,117,155,0.3);
+
+.wp-block-bootstrapblocks-div {
+  border: 2px solid $blue !important;
+  background: $bluebackground;
+}
